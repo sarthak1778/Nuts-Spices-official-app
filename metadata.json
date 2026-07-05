@@ -1,0 +1,6 @@
+{
+  "name": "Nuts & Spices",
+  "description": "Premium multi-screen luxury e-commerce prototype for organic nuts, hand-picked spices, and boutique dried fruits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

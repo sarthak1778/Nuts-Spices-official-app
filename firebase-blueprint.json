@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Premium nuts, seeds, or spices product item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "originalPrice": { "type": "number" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "image": { "type": "string" },
+        "rating": { "type": "number" },
+        "reviewsCount": { "type": "string" },
+        "organic": { "type": "boolean" },
+        "bestSeller": { "type": "boolean" },
+        "proteinRich": { "type": "boolean" }
+      },
+      "required": ["id", "name", "price", "description", "category", "image"]
+    },
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "User profile with cart, orders, and loyalty details",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "membershipStatus": { "type": "string" },
+        "rewardsPoints": { "type": "number" },
+        "savedIds": { "type": "array" },
+        "cart": { "type": "array" },
+        "orders": { "type": "array" }
+      },
+      "required": ["name", "email"]
+    }
+  },
+  "firestore": {
+    "products/{productId}": {
+      "schema": "Product",
+      "description": "Product collection for raw inventory"
+    },
+    "users/{email}": {
+      "schema": "UserProfile",
+      "description": "User profiles"
+    }
+  }
+}

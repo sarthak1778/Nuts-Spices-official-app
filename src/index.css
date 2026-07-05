@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif-premium: "EB Garamond", "Playfair Display", Georgia, serif;
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+}
